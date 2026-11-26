@@ -1,0 +1,55 @@
+{
+  "name": "2d-in-3d-animation-framework",
+  "version": "1.0.0",
+  "description": "Procedural 2D-in-3D Animated Comic Shorts Framework built with Three.js, Canvas2D, Remotion, and Procedural DSP Audio.",
+  "main": "src/index.ts",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:stills": "node scripts/render-stills.mjs",
+    "render:previews": "node scripts/render-previews.mjs",
+    "render:audio": "python scripts/gen-audio.py",
+    "render:video": "node scripts/render-video.mjs",
+    "render:captions": "node scripts/render-captions.mjs",
+    "build": "remotion bundle src/index.ts",
+    "darto:audio": "python scripts/gen-audio-darto.py",
+    "darto:captions": "python scripts/gen-chunks-darto.py",
+    "darto:stills": "node scripts/darto-stills.mjs",
+    "darto:preview": "node scripts/darto-render.mjs --preview",
+    "darto:render": "node scripts/darto-render.mjs",
+    "darto:render-clean": "node scripts/darto-render.mjs --no-captions",
+    "darto:render-2k": "node scripts/darto-render.mjs --2k",
+    "qa:orang-dalam": "node scripts/render-orang-dalam.mjs",
+    "render:orang-dalam": "node scripts/render-orang-dalam.mjs --final"
+  },
+  "keywords": [
+    "remotion",
+    "threejs",
+    "2d-in-3d",
+    "animation",
+    "comic",
+    "procedural-generation",
+    "react-three-fiber",
+    "short-form-video"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
+    "@remotion/bundler": "^4.0.540",
+    "@remotion/cli": "^4.0.540",
+    "@remotion/renderer": "^4.0.540",
+    "@remotion/three": "^4.0.540",
+    "@types/react": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "postprocessing": "^6.39.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.540",
+    "three": "^0.187.0",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.11"
+  }
+}
